@@ -8,6 +8,8 @@ class SearchBar extends Component {
 	};
 	onFormSubmit = e => {
 		e.preventDefault();
+
+		this.props.onTermSubmit(this.state.term)
 	};
 
 	render() {
