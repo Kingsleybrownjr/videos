@@ -28,7 +28,7 @@ class App extends Component {
 
 	render() {
 		return (
-			<div className="ui container">
+			<div className="mg-t ui container">
 				<SearchBar onTermSubmit={this.onTermSubmit} />
 				<VideoDetail video={this.state.selectedVideo} />
 				<VideoList

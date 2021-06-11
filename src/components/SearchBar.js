@@ -9,18 +9,20 @@ class SearchBar extends Component {
 	onFormSubmit = e => {
 		e.preventDefault();
 
-		this.props.onTermSubmit(this.state.term)
+		this.props.onTermSubmit(this.state.term);
+		this.setState({ term: '' });
 	};
 
 	render() {
 		return (
-			<div className="search-bar ui segment">
+			<div className="ui segment bg-color">
 				<form className="ui form" onSubmit={this.onFormSubmit}>
 					<div className="field">
-						<label htmlFor="">Video Search:</label>
+						<label className='text-color'>Video Search:</label>
 					</div>
 					<input
 						type="text"
+						className='text-color bg-color'
 						value={this.state.term}
 						onChange={this.onInputChange}
 						placeholder="Enter Search"

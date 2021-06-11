@@ -1,8 +1,10 @@
+import Spinner from './Spinner';
+
 const VideoDetail = ({ video }) => {
 	if (!video) {
-		return <div>Loading...</div>;
+		return <Spinner />;
 	}
-	console.log(video);
+
 	const { title, description } = video.snippet;
 	const videoSrc = `https://www.youtube.com/embed/${video.id.videoId}`;
 
@@ -11,9 +13,9 @@ const VideoDetail = ({ video }) => {
 			<div className="ui embed">
 				<iframe title="Video player" src={videoSrc} frameBorder="0"></iframe>
 			</div>
-			<div className="ui segment">
-				<h4 className="ui header">{title}</h4>
-				<p>{description}</p>
+			<div className="ui segment bg-color">
+				<h4 className="ui header text-color">{title}</h4>
+				<p className="text-color">{description}</p>
 			</div>
 		</div>
 	);
