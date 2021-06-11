@@ -1,3 +1,32 @@
+Users should be able to:
+
+- Search a video by typing in the search bar.
+- Render a video by click on a list.
+- Play the video.
+
+### Links
+
+- Live Site URL: https://seasonslocation.netlify.app/
+
+### Built with
+
+- React JS
+- CSS
+- Flexbox
+- Semantic UI
+- Youtube API
+- Async/Await
+- Axios
+
+### What I learned
+
+On this project I reinforced my knowledge about using state inside components, axios, async/await and using external APIS. I learn best by doing and with this project I felt like I completed understood the basics of react.
+
+### Continued development
+
+From here on I will dive deeper into the React world, since I love this library, makes everything that much easier and its not hard to understand. Moving foward I will try to build bigger applications to gain more knowledge and run into problems I haven't seen before.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
